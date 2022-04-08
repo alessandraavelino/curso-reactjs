@@ -27,7 +27,6 @@ const url = "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=
 
       </header>
       <Frase />
-      <Frase />
       <div className="text">
         <h1>Hello World</h1>
         <p>Olá, {newName}</p>

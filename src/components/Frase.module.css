@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .fraseContainer {
     background-color: #222;
     border: 1px solid #111;
@@ -9,4 +15,23 @@
     color: white;
     background-color: white;
     margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+   
+
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 1px solid black;
+    
+ 
 }
