@@ -5,7 +5,9 @@ import Header from "./components/Header";
 import SayMyName from "./components/SayMyName";
 import Pessoa from "./components/Pessoa";
 import Frase from "./components/Frase";
-
+import List from "./components/List";
+import Evento from "./components/Evento";
+import Form from "./components/Form";
 function App() {
   const name = "ale"
   const newName = name.toUpperCase();
@@ -27,12 +29,17 @@ const url = "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=
 
       </header>
       <Frase />
+      <List />
+      <Evento numero="1" />
+      <Evento numero="2" />
+      <Form />
+      
       <div className="text">
         <h1>Hello World</h1>
         <p>Olá, {newName}</p>
         <p>Soma: {Soma(1, 2)}</p>
         <img src={url} alt="test" />
-        
+
         
         <HelloWorld />
         <SayMyName nome="Alessandra" />
