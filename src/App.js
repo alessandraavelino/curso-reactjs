@@ -8,11 +8,24 @@ import Frase from "./components/Frase";
 import List from "./components/List";
 import Evento from "./components/Evento";
 import Form from "./components/Form";
+import Condicional from "./components/Condicional"
+import OutraLista from './components/OutraLista';
+import SeuNome from './components/SeuNome';
+import { useState } from "react"
+import Saudacao from './components/Saudacao';
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom"
+import Home from "./components/pages/Home"
+
+import { BrowserRouter } from 'react-router-dom';
+
 function App() {
+
   const name = "ale"
   const newName = name.toUpperCase();
   const nome = "Harry"
-  
+
+  const meusItens = ["react", "vue", "angular"]
+  const [nombre, setNombre] = useState()
 
 function Soma(a, b){
   return a + b
@@ -23,15 +36,17 @@ const url = "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=
   return (
     <div className="App">
       
-      <header>
-      <Header />
-        
 
-      </header>
+      
       <Frase />
       <List />
-      <Evento numero="1" />
-      <Evento numero="2" />
+      <Condicional />
+      <SeuNome setNombre={setNombre} />
+   
+      <Saudacao nombre={nombre} />
+      <Evento />
+      <OutraLista itens={meusItens} />
+
       <Form />
       
       <div className="text">

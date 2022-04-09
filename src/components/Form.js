@@ -29,6 +29,7 @@ const Form = () => {
           <input type="submit" value="cadastrar" />
         </div>
       </form>
+      
     </div>
   )
 }
